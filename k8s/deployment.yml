@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: exo-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: exo-app
+  template:
+    metadata:
+      labels:
+        app: exo-app
+    spec:
+      containers:
+        - name: exo-app
+          image: mat1e0/exo-github-actions:latest
+          imagePullPolicy: Always
