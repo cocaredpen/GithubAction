@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: mat1e0/my-app:44d6d90ee693b698867a015ae5ccaa62f46f5d9e
+          image: mat1e0/my-app:819779f913226ab3170405bb2b4584b19b99ef38
           ports:
             - containerPort: 5000
